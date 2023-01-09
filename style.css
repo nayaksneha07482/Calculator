@@ -1,0 +1,179 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body
+{
+display:flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #edf1f4 ;
+border: 1px solid rgb(13, 113, 30);
+}
+.cal
+{
+    position:relative;
+    width:340px;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1),-15px -15px 20px #fffb ;
+    border: 1px solid rgba(255, 255, 255, 0.621);
+}
+
+.buttons
+{
+    position:relative;
+    display: grid;
+    /* border:5px solid rgb(69, 8, 41); */
+    /* grid-column: 4; */
+}
+#value
+{
+    position: relative;
+    grid-column: span 4 ;
+    user-select: none;
+    overflow: none;
+    width:100%;
+    height:100px;
+    text-align: end;
+    color:#5166d6;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),inset -5px -5px 20px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+/* #inner
+{
+    border:1px solid blue;
+    display: grid;
+} */
+span
+{
+position: relative;
+padding: 10px;
+box-shadow: 5px 5px 10px rgba(0,0,0,0.1),-5px -5px 10px #fff;
+margin: 10px;
+cursor: pointer;
+user-select: none;
+width: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2em;
+color: #666;
+border: 2px solid #edf1f4;
+border-radius: 10px;
+} 
+span:active
+{
+box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),inset -5px -5px 10px #fff;
+color: #f44336;
+}
+span#clear
+{
+width: 85%;
+grid-column: span 2;
+background: #f44336;
+color: #fff;
+border: 2px solid #edf1f4;
+}
+.dark span#clear
+{
+    border:2px solid #333;
+}
+span#plus
+{
+grid-row: span 2;
+background: #1ac4f7;
+color: #fff;
+border: 2px solid #edf1f4;
+}
+.dark span#plus
+{
+    border:2px solid #333;
+}
+span#equal
+{
+background: #3d9e0c;
+color: #fff;
+border: 2px solid #edf1f4;
+}
+.dark span#equal
+{
+    border:2px solid #333;
+}
+span#clear:active,
+span#plus:active,
+span#equal:active
+{
+box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+5px 5px 10px #fff,
+inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.togglebtn
+{
+    position: fixed;
+    top:20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #edf1f4;
+    background: #555;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),-5px -5px 10px #fff;
+}
+
+.dark
+{
+background: #282c2f;
+}
+.dark .cal{
+background: #33393e;
+box-shadow: 15px 15px 20px rgba(0,0,0,0.25),-15px -15px 20px rgba(155,255,255,0.1);
+border: 1px solid rgba(74, 71, 71, 0.621);
+}
+.dark #value
+{
+background: #33393e;
+color: #eee;
+box-shadow: inset 15px 15px 20px rgba(0,0,0,0.5),inset -15px -15px 20px rgba(155,255,255,0.1);
+}
+/* ========================== */
+.dark span
+{
+color:#eee;
+border: 2px solid #333;
+box-shadow: 5px 5px 5px rgba(0,0,0,0.25), -5px -5px 10px rgba(255,255,255,0.1);
+}
+.dark span:active
+{
+box-shadow: inset 5px 5px 10px rgba(0,0,0,0.25), inset -5px -5px 10px rgba(255,255,255,0.1);
+
+}
+
+.dark span#clear:active,
+.dark span#plus:active,
+.dark span#equal:active
+{
+box-shadow:inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+.dark .togglebtn
+{
+    background: #edf1f4;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25), -5px -5px 10px rgba(255,255,255,0.25);
+
+}
+
+/* body{
+    background-image: linear-gradient(to bottom right, rgba(79,51,176,1),rgba(210,53,165));
+} */
